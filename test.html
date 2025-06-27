@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator Test</title>
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Calculator Integration Test</h1>
+    <p>Check console for any JavaScript errors.</p>
+    <script>
+      $(document).ready(function () {
+        console.log("jQuery loaded:", typeof $ !== "undefined");
+        console.log("Calculator script loaded");
+        console.log("All calculator buttons:", $("[class^=keyPad_]").length);
+      });
+    </script>
+  </body>
+</html>
