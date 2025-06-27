@@ -8,7 +8,7 @@ body {
   font-family: Arial;
 }
 .calc_close {
-  background: url("reference.png") no-repeat -204px -13px;
+  background: url("icons/reference.png") no-repeat -204px -13px;
   width: 16px;
   height: 16px;
   color: #fff;
@@ -27,7 +27,7 @@ body {
 }
 #keyPad_Help {
   color: #000;
-  background: url("reference.png") no-repeat -22px -8px;
+  background: url("icons/reference.png") no-repeat -22px -8px;
   width: 54px;
   height: 25px;
   padding: 1px;
@@ -50,13 +50,13 @@ body {
 	-ms-box-shadow:0 2px 2px #000000;*/
 }
 #keyPad_Help:hover {
-  background: url("reference.png") no-repeat -82px -8px;
+  background: url("icons/reference.png") no-repeat -82px -8px;
   width: 54px;
   height: 25px;
 }
 #keyPad_Helpback {
   color: #000;
-  background: url("reference.png") no-repeat -22px -43px;
+  background: url("icons/reference.png") no-repeat -22px -43px;
   width: 54px;
   height: 25px;
   padding: 1px;
@@ -70,12 +70,12 @@ body {
   top: 7px;
 }
 #keyPad_Helpback:hover {
-  background: url("reference.png") no-repeat -82px -43px;
+  background: url("icons/reference.png") no-repeat -82px -43px;
   width: 54px;
   height: 25px;
 }
 .calc_min {
-  background: url("reference.png") no-repeat -146px -26px;
+  background: url("icons/reference.png") no-repeat -146px -26px;
   width: 16px;
   height: 3px;
   color: #fff;
@@ -90,7 +90,7 @@ body {
   top: 25px;
 }
 .calc_max {
-  background: url("reference.png") no-repeat -175px -13px;
+  background: url("icons/reference.png") no-repeat -175px -13px;
   width: 16px;
   height: 16px;
   color: #fff;
