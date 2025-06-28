@@ -6,6 +6,8 @@
 
 body {
   font-family: Arial;
+  overflow-x: hidden;
+  background-color: transparent;
 }
 .calc_close {
   background: url("icons/reference.png") no-repeat -204px -13px;
@@ -125,7 +127,7 @@ body {
   padding: 10px;
 }
 .calc_container {
-  background: none repeat scroll 0 0 #dadada;
+  background: none repeat scroll 0 0 #c8c8c8;
   border: 1px solid #aaa;
   border-radius: 5px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1) inset;
