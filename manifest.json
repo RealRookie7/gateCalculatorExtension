@@ -3,12 +3,26 @@
   "name": "GATE Calculator",
   "version": "1.0",
   "description": "A scientific calculator that overlays on any webpage, triggered by a shortcut.",
+  "icons": {
+    "16": "icons/icon.png",
+    "32": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
   "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>", "file://*/*"],
   "background": {
     "service_worker": "js/background.js"
   },
   "action": {
-    "default_title": "GATE Calculator"
+    "default_title": "GATE Calculator",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon.png",
+      "32": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+    }
   },
   "commands": {
     "_execute_action": {
@@ -27,9 +41,13 @@
         "js/jquery-1.8.0.min.js",
         "js/jquery-ui.min.js",
         "js/scripts.js",
-        "icons/reference.png"
+        "icons/reference.png",
+        "icons/icon.png"
       ],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "chrome_url_overrides": {
+    "pdf": "index.html"
+  }
 }

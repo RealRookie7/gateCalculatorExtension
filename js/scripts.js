@@ -1258,6 +1258,10 @@ $(document).ready(function () {
 
     $(document).on("click", "#closeButton", function () {
       window.parent.postMessage({ type: "closeCalculator" }, "*");
+      // Also close popup if loaded as extension popup
+      window.close();
+      // Hide calculator if window.close() does not work
+      $("#keyPad").hide();
     });
 
     $(document).on("click", "#keyPad_Help", function () {
