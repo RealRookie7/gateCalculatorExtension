@@ -1,5 +1,7 @@
 # GATE Calculator
 
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=sairajB.gateCalculatorExtension)
+
 A comprehensive scientific calculator browser extension designed specifically for engineering students and professionals preparing for GATE (Graduate Aptitude Test in Engineering) examinations. The calculator provides an overlay interface that can be accessed on any webpage without interrupting your study session.
 
 ## Features
