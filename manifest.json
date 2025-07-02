@@ -35,18 +35,15 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "index.html",
         "styles.css",
-        "js/jquery-1.8.0.min.js",
+        "js/jquery-3.7.1.min.js",
         "js/jquery-ui.min.js",
         "js/scripts.js",
         "icons/reference.png",
-        "icons/icon.png"
+        "icons/qr.jpg",
+        "icons/support-2.png"
       ],
       "matches": ["<all_urls>"]
     }
-  ],
-  "chrome_url_overrides": {
-    "pdf": "index.html"
-  }
+  ]
 }
