@@ -43,6 +43,11 @@ $(document).ready(function () {
     this.blur();
   });
 
+  // Prevent text selection on help and support content
+  $("#helpContent, #supportContent").on("mousedown", function () {
+    return false;
+  });
+
   $.fn.setCursorPosition = function (pos) {
     this.each(function (index, elem) {
       if (elem.setSelectionRange) {
