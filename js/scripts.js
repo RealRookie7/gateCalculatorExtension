@@ -1281,6 +1281,24 @@ $(document).ready(function () {
       $("#keyPad_UserInput1").show();
       $("#helpContent").hide();
     });
+
+    $(document).on("click", "#keyPad_Support", function () {
+      $("#helptopDiv div").hide();
+      $("#helpContent").hide();
+      $(".text_container, .left_sec, #keyPad_UserInput1").hide();
+      $("#supportContent").show();
+    });
+    $(document).on("click", "#supportContent", function () {
+      $("#supportContent").hide();
+      $(".text_container, .left_sec, #keyPad_UserInput1").show();
+      $("#helptopDiv div").show();
+    });
+    $(document).on("click", "#keyPad_Supportback", function () {
+      $("#supportContent").hide();
+      $(".text_container, .left_sec, #keyPad_UserInput1").show();
+      $("#keyPad_Support, #keyPad_Help").show();
+      $("#keyPad_Helpback").hide();
+    });
   });
 });
 // ***********************************************************************************
