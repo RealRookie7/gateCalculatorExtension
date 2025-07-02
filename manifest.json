@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "GATE Calculator",
   "version": "1.0",
-  "description": "A scientific calculator that overlays on any webpage, triggered by a shortcut.",
+  "description": "A powerful scientific calculator designed for GATE exam preparation. Features an overlay interface that can be opened on any webpage using Ctrl+Shift+Y.",
   "icons": {
     "16": "icons/icon.png",
     "32": "icons/icon.png",
