@@ -38,9 +38,7 @@
         "js/jquery-3.7.1.min.js",
         "js/jquery-ui.min.js",
         "js/scripts.js",
-        "icons/reference.png",
-        "icons/qr.jpg",
-        "icons/support-2.png"
+        "icons/reference.png"
       ],
       "matches": ["<all_urls>"]
     }

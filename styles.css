@@ -327,22 +327,3 @@ body {
   /* cursor: move; */
 }
 /** new help changes **/
-#keyPad_Support {
-  color: #000;
-  background: url("icons/support-2.png") no-repeat center center;
-  background-size: 85px 85px; /* display icon at normal size */
-  width: 54px;
-  height: 25px;
-  padding: 1px;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  position: absolute;
-  right: 143px; /* place left of help (79px) plus width 54px + 1px */
-  text-align: center;
-  top: 7px;
-}
-#keyPad_Support:hover {
-  opacity: 0.8;
-}
