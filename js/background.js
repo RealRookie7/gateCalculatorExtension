@@ -1,46 +1,23 @@
 chrome.action.onClicked.addListener((tab) => {
+  if (!tab.id) return;
+
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
-    func: injectCalculator,
+    files: ["content-script.js"],
   });
 });
 
-chrome.commands.onCommand.addListener((command, tab) => {
+chrome.commands.onCommand.addListener((command) => {
   if (command === "_execute_action") {
-    chrome.scripting.executeScript({
-      target: { tabId: tab.id },
-      func: injectCalculator,
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      const activeTab = tabs[0];
+      if (!activeTab?.id) return;
+
+      chrome.scripting.executeScript({
+        target: { tabId: activeTab.id },
+        files: ["content-script.js"],
+      });
     });
   }
 });
 
-function injectCalculator() {
-  const iframeId = "gate-calculator-iframe";
-  const existingIframe = document.getElementById(iframeId);
-
-  if (existingIframe) {
-    existingIframe.remove();
-    return;
-  }
-
-  const iframe = document.createElement("iframe");
-  iframe.id = iframeId;
-  iframe.src = chrome.runtime.getURL("index.html");
-  iframe.style.position = "fixed";
-  iframe.style.top = "10px";
-  iframe.style.right = "10px";
-  iframe.style.width = "470px";
-  iframe.style.height = "600px";
-  iframe.style.zIndex = "9999";
-  iframe.style.border = "none";
-  document.body.appendChild(iframe);
-
-  window.addEventListener("message", function (event) {
-    if (event.data.type && event.data.type === "closeCalculator") {
-      const iframeToRemove = document.getElementById(iframeId);
-      if (iframeToRemove) {
-        iframeToRemove.remove();
-      }
-    }
-  });
-}
