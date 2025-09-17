@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "GATE Calculator",
   "version": "1.2",
   "description": "An on-screen GATE exam calculator replicating the official scientific calculator interface.",
@@ -9,15 +9,15 @@
     "48": "icons/icon.png",
     "128": "icons/icon.png"
   },
-  "permissions": ["scripting", "activeTab", "tabs"],
+  "permissions": ["activeTab", "tabs", "storage"],
 
   "background": {
-    "service_worker": "js/background.js"
+    "scripts": ["js/background.js"],
+    "persistent": false
   },
 
-  "action": {
+  "browser_action": {
     "default_title": "GATE Calculator",
-    "default_popup": "index.html",  // Optional, can remove if you only inject via background
     "default_icon": {
       "16": "icons/icon.png",
       "32": "icons/icon.png",
@@ -27,7 +27,7 @@
   },
 
   "commands": {
-    "_execute_action": {
+    "_execute_browser_action": {
       "suggested_key": {
         "default": "Ctrl+Shift+Y"
       },
@@ -36,16 +36,11 @@
   },
 
   "web_accessible_resources": [
-    {
-      "resources": [
-        "index.html",
-        "styles.css",
-        "js/jquery-3.7.1.min.js",
-        "js/jquery-ui.min.js",
-        "js/scripts.js",
-        "icons/reference.png"
-      ],
-      "matches": ["<all_urls>"]
-    }
+    "index.html",
+    "styles.css",
+    "js/jquery-3.7.1.min.js",
+    "js/jquery-ui.min.js",
+    "js/scripts.js",
+    "icons/reference.png"
   ]
 }
