@@ -9,13 +9,15 @@
     "48": "icons/icon.png",
     "128": "icons/icon.png"
   },
-  "permissions": ["scripting", "activeTab"],
+  "permissions": ["scripting", "activeTab", "tabs"],
+
   "background": {
     "service_worker": "js/background.js"
   },
+
   "action": {
     "default_title": "GATE Calculator",
-    "default_popup": "index.html",
+    "default_popup": "index.html",  // Optional, can remove if you only inject via background
     "default_icon": {
       "16": "icons/icon.png",
       "32": "icons/icon.png",
@@ -23,6 +25,7 @@
       "128": "icons/icon.png"
     }
   },
+
   "commands": {
     "_execute_action": {
       "suggested_key": {
@@ -31,9 +34,11 @@
       "description": "Open GATE Calculator"
     }
   },
+
   "web_accessible_resources": [
     {
       "resources": [
+        "index.html",
         "styles.css",
         "js/jquery-3.7.1.min.js",
         "js/jquery-ui.min.js",
