@@ -1,6 +1,7 @@
 # GATE Calculator
 
 ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=sairajB.gateCalculatorExtension)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive scientific calculator browser extension designed specifically for engineering students and professionals preparing for GATE (Graduate Aptitude Test in Engineering) examinations. The calculator provides an overlay interface that can be accessed on any webpage without interrupting your study session.
 
@@ -142,6 +143,12 @@ A comprehensive scientific calculator browser extension designed specifically fo
 - Close calculator when not in use to free system resources
 - Use the minimize function for long-term availability
 - Clear memory periodically to prevent accumulation of old values
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+The MIT License is a permissive license that allows for reuse within proprietary software provided that all copies of the licensed software include a copy of the MIT License terms and the copyright notice.
 
 ## Troubleshooting
 
