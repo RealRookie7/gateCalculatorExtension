@@ -20,14 +20,5 @@
       "128": "icons/icon.png"
     },
     "default_popup": "index.html"
-  },
-
-  "web_accessible_resources": [
-    "index.html",
-    "styles.css",
-    "js/jquery-3.7.1.min.js",
-    "js/jquery-ui.min.js",
-    "js/scripts.js",
-    "icons/reference.png"
-  ]
+  }
 }
